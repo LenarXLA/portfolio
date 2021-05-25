@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lenar XLA Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1200);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header" id="head">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" width="180px" /></a>
+				</div>
+				<div class="top-menu">
+					<span class="menu"> </span>
+					<ul>
+						<nav class="cl-effect-5">
+							<li><a class="active" href="index.html"><span data-hover="Главная">Главная</span></a></li>
+							<li><a href="#about" class="scroll"><span data-hover="Обо мне">Обо мне</span></a></li>
+							<li><a href="#work" class="scroll"><span data-hover="Проекты"><span>Проекты</span></a></li>
+							<li><a href="#services" class="scroll"><span data-hover="Развитие">Развитие</span></a></li>
+							<li><a href="#contact" class="scroll"><span data-hover="Контакты">Контакты</span></a></li>
+						</nav>
+					</ul>
+				</div>
+				<!--script-nav-->
+				<script>
+					$("span.menu").click(function () {
+						$(".top-menu ul").slideToggle("slow", function () {});
+					});
+				</script>
+				<div class="clearfix"></div>
+			</div>
+			<div class="index-banner">
+				<div class="wmuSlider example1">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner_center">
+									<h1>Всем привет,</h1>
+									<h2>я <span>JAVA разработчик</span></h2>
+									<h2>начинающий</h2>
+								</div>
+							</div>
+						</article>
+						<article style="position: relative; width: 100%; opacity: 1;">
+							<div class="banner-wrap">
+								<div class="banner_center">
+									<h1>занимаюсь</h1>
+									<h2><span>самообучением</span></h2>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner_center">
+									<h1>испытываю</h1>
+									<h2>большой интерес к <span>разработке</span></h2>
+								</div>
+							</div>
+						</article>
+					</div>
+
+				</div>
+				<script src="js/jquery.wmuSlider.js"></script>
+				<script>
+					$('.example1').wmuSlider();
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="about-section" id="about" id="about">
+			<div class="container">
+				<div class="about-header">
+					<h3>Обо мне</h3>
+					<div class="about-imag">
+						<img src="images/pic-9.jpg" alt="" />
+					</div>
+					<div class="about-text">
+						<p>Начал изучать программирование с JavaScript. Позже перешёл на Java, 
+							который изучаю около шести месяцев. В основном черпаю знания с специализированной литературы (см. "МОЕ СОВЕРШЕНСТВОВАНИЕ"), API-документации языка и
+						  видеоуроков.
+							Решаю различные интересные задачи, разрабатываю свои проекты (см. "ПРОЕКТЫ")</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="about-sectiongrids">
+
+					<div class="col-md-6 about-leftgrid">
+
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Java SE</h4>
+								</div>
+								<div class="percentage" style="margin-right: 10%">
+									<p>85%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:85%"> </div>
+							</div>
+						</div>
+
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Java EE</h4>
+								</div>
+								<div class="percentage" style="margin-right: 50%">
+									<p>45%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:45%"> </div>
+							</div>
+						</div>
+
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Spring</h4>
+								</div>
+								<div class="percentage" style="margin-right: 35%">
+									<p>60%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:60%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Hibernate</h4>
+								</div>
+								<div class="percentage" style="margin-right: 55%">
+									<p>40%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:40%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Maven(Gradle)</h4>
+								</div>
+								<div class="percentage" style="margin-right: 15%">
+									<p>80%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:80%"> </div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6 about-rightgrid">
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>SQL</h4>
+								</div>
+								<div class="percentage" style="margin-right: 35%">
+									<p>60%</p>
+								</div>
+								<div class="clearfix" style="margin-right: 35%"></div>
+							</div>
+							<div class="skills">
+								<div style="width:60%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>HTML/CSS</h4>
+								</div>
+								<div class="percentage" style="margin-right: 10%">
+									<p>85%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:85%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>JavaScript</h4>
+								</div>
+								<div class="percentage" style="margin-right: 30%">
+									<p>65%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:65%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Git</h4>
+								</div>
+								<div class="percentage" style="margin-right: 25%">
+									<p>70%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:70%"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="arrow1">
+					<a href="#work" class="scroll"><img src="images/arrow1.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- about-section-ends -->
+
+		<div class="works-section" id="work">
+			<div class="works-header">
+				<h3>Проекты</h3>
+				<p style="font-size: medium;">Здесь предоставлены разработанные мной проекты </p>
+				<p style="font-size: small;">Задеплоены на Heroku, могут долго грузится(Heroku засыпает через полчаса после последней активности)</p>
+			</div>
+
+			<div class="wrap">
+
+				<div class="tile">
+					<img src="https://i.ibb.co/2j8Ly6V/1st.png" alt="1st">
+					<div class="text">
+						<h1>Books Store</h1>
+						<h2 class="animate-text">CRUD приложение: книжный магазин</h2>
+						<p class="animate-text">Java, Spring Boot, PostgeSQL, Lombok, ThymeLeaf, Materialize CSS, Heroku(валидация форм не работает на Heroku)</p>
+						<p class="animate-text"><a class="my-link btn" href="https://github.com/LenarXLA/books-store" target="_blank">Исходный код</a></p>
+						<p class="animate-text"><a class="my-link btn" href="https://books-magazine-crud.herokuapp.com/books" target="_blank">Посмотреть &#10132;</a></p>
+						<div class="dots">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="tile">
+					<img
+						src='images/bank.jpg' />
+					<div class="text">
+						<h1>Simple banking system</h1>
+						<h2 class="animate-text">Простая банковская система</h2>
+						<p class="animate-text">Java, SQLite </p>
+						<p class="animate-text"><a class="my-link btn" href="https://github.com/LenarXLA/simple-banking-system" target="_blank">Исходный код</a></p>
+						<div class="dots">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="tile">
+					<img
+						src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80' />
+					<div class="text">
+						<h1>Other</h1>
+						<h2 class="animate-text">Мои остальные проекты</h2>
+						<p class="animate-text">Java, JS, CSS </p>
+						<p class="animate-text"><a class="my-link btn" href="https://github.com/LenarXLA/Resume" target="_blank">Посмотреть &#10132;</a></p>
+						<div class="dots">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="arrow1">
+				<a href="#contact" class="scroll"><img src="images/arrow1.png" alt="" /></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- portfolio-section-ends -->
+
+	<div class="services-section" id="services">
+		<div class="container">
+			<div class="services-header">
+				<h3>Мое совершенствование</h3>
+
+				<div class="descriptions">
+					<h4>Книги<img width="30px" height="30px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI5Ny4wMDEgMjk3LjAwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjk3LjAwMSAyOTcuMDAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTI4Ny4wMzQsNjAuODczbC0yMC44MTktMC4wMDFWMzkuMzIxYzAtNC45MzQtMy42MS05LjEyNi04LjQ5LTkuODU2Yy0wLjg1Mi0wLjEyOC0yMS4xMzQtMy4wNzQtNDUuNTU3LDEuMzcNCgkJCWMtMjcuMjI3LDQuOTU0LTQ4Ljk0MSwxNy4xNzEtNjMuNjY4LDM1LjY0Yy0xNC43MjgtMTguNDY5LTM2LjQ0Mi0zMC42ODYtNjMuNjY4LTM1LjY0Yy0yNC40MjQtNC40NDMtNDQuNzA2LTEuNDk4LTQ1LjU1Ny0xLjM3DQoJCQljLTQuODgsMC43MzEtOC40OSw0LjkyMy04LjQ5LDkuODU2djIxLjU1MUg5Ljk2NkM0LjQ2Myw2MC44NzIsMCw2NS4zMzUsMCw3MC44Mzl2MTg3LjgwNWMwLDMuMjI3LDEuNTYyLDYuMjU0LDQuMTkzLDguMTI0DQoJCQlzNi4wMDQsMi4zNSw5LjA1MSwxLjI4OGMwLjc0OC0wLjI1OSw3NS40MzEtMjUuNzQ3LDEzMS4xMi0wLjM0NWMyLjYyOCwxLjE5OSw1LjY0NSwxLjE5OSw4LjI3MywwDQoJCQljNTUuNTMzLTI1LjMzLDEzMC4zNzYsMC4wODgsMTMxLjEyLDAuMzQ1YzEuMDY4LDAuMzcyLDIuMTc0LDAuNTU1LDMuMjc2LDAuNTU1YzIuMDQzLDAsNC4wNjUtMC42MjgsNS43NzUtMS44NDINCgkJCWMyLjYzMS0xLjg3LDQuMTkzLTQuODk3LDQuMTkzLTguMTI0VjcwLjg0QzI5Nyw2NS4zMzYsMjkyLjUzOCw2MC44NzMsMjg3LjAzNCw2MC44NzN6IE0xOS45MzMsMjQ1LjMwOVY4MC44MDVoMTAuODUydjEzMi43MjYNCgkJCWMwLDIuODk2LDEuMjY3LDUuNjQ2LDMuNDU4LDcuNTM5YzIuMTkxLDEuODkzLDUuMTA1LDIuNzQyLDcuOTY5LDIuMzE5YzAuNTUtMC4wOCw0My44NDYtNi4wMjQsNzUuNDc4LDE1LjY3OQ0KCQkJQzc4LjcyNSwyMzIuNDA1LDM5LjcyNywyNDAuMTEyLDE5LjkzMywyNDUuMzA5eiBNMTM4LjUzNCwyMzAuMDhjLTEzLjkzMi0xMi41ODgtMzIuMDc5LTIxLjEtNTMuNzAyLTI1LjAzNA0KCQkJYy0xMC40MDYtMS44OTQtMjAuMDYtMi40NDYtMjcuNzgtMi40NDZjLTIuMjkyLDAtNC40MTQsMC4wNDktNi4zMzMsMC4xMjZWNDguNDczaC0wLjAwMWMxOS4xNTUtMC44NjQsNjUuNzUyLDEuMTg0LDg3LjgxNiwzOC41ODcNCgkJCVYyMzAuMDh6IE0xNTguNDY2LDg3LjA2MWMyMS45ODUtMzcuMjQzLDY4LjY1NS0zOS4zODQsODcuODE2LTM4LjU2M3YxNTQuMjI4Yy04LjM4My0wLjMzOC0yMC42Mi0wLjEzNi0zNC4xMTQsMi4zMg0KCQkJYy0yMS42MjMsMy45MzQtMzkuNzcsMTIuNDQ1LTUzLjcwMiwyNS4wMzRWODcuMDYxeiBNMTc5LjI3NywyMzkuMDc0YzMxLjYzNi0yMS43MTYsNzQuOTU1LTE1Ljc2Niw3NS40OTUtMTUuNjg2DQoJCQljMi44NzEsMC40MzEsNS43ODMtMC40MTMsNy45ODEtMi4zMDVjMi4xOTgtMS44OTQsMy40NjItNC42NSwzLjQ2Mi03LjU1MlY4MC44MDZoMTAuODUydjE2NC41MDMNCgkJCUMyNTcuMjY3LDI0MC4xMSwyMTguMjUzLDIzMi40LDE3OS4yNzcsMjM5LjA3NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /></h4>
+
+						<ul>
+							<li><a href="https://www.amazon.com/Introduction-Programming-Structures-Comprehensive-Version/dp/0136520235" target="_blank">
+								&#9733;  Y. Daniel Liang - «Introduction to Java Programming and Data Structures»</a>(в процессе)</li>
+							<li><a href="https://www.ozon.ru/product/struktury-dannyh-i-algoritmy-v-java-struktury-dannyh-i-algoritmy-v-java-23529814/" target="_blank">
+								&#9733;  Лафоре Роберт - «Структуры данных и алгоритмы в Java»</a>(в процессе)</li>
+							<li><a href="https://www.ozon.ru/context/detail/id/141529764/?stat=YW5fMQ%3D%3D" target="_blank">
+								&#9733;  Хорстманн Кей С. - «Java. Библиотека профессионала. Том 2. Расширенные средства программирования»</a></li>
+							<li><a href="https://www.ozon.ru/product/java-biblioteka-professionala-tom-1-osnovy-150586176/?utm_source=google&utm_medium=cpc&utm_campaign=RF_Product_Shopping_Books_newclients_super&gclid=CjwKCAjw7J6EBhBDEiwA5UUM2o8NZ4QZrbYiDblMGw24DJBMg3ZrHW7ya0Yosl5_cGFCsU6dlgkznxoCpGEQAvD_BwE" target="_blank">
+								&#9733;  Хорстманн Кей С. - «Java. Библиотека профессионала. Том 1. Основы»</a></li>
+							<li><a href="https://www.ozon.ru/product/izuchaem-javascript-rukovodstvo-po-sozdaniyu-sovremennyh-veb-saytov-140372302/" target="_blank">
+								&#9733;  Этан Браун - «Изучаем JavaScript»</a></li>
+							<li><a href="https://www.ozon.ru/product/2020-izuchaem-java-head-first-java-second-edition-7821666/" target="_blank">
+								&#9733;  Сьерра Кэти, Бэйтс Берт - «Изучаем Java»</a></li>
+						</ul>
+
+					<h4>Курсы<img width="30px" height="30px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NjAuOCwyMDAuNzQ4VjUxLjJjLTAuMDE1LTE0LjEzMi0xMS40NjgtMjUuNTg1LTI1LjYtMjUuNmgtOC41MzNjLTAuMDE1LTE0LjEzMi0xMS40NjgtMjUuNTg1LTI1LjYtMjUuNkgyNTYNCgkJCWMtOS44NDEsMC4wMzItMTkuMTgyLDQuMzM3LTI1LjYsMTEuNzk2QzIyMy45ODIsNC4zMzcsMjE0LjY0MSwwLjAzMiwyMDQuOCwwSDU5LjczM2MtMTQuMTMyLDAuMDE1LTI1LjU4NSwxMS40NjgtMjUuNiwyNS42SDI1LjYNCgkJCUMxMS40NjgsMjUuNjE1LDAuMDE1LDM3LjA2OCwwLDUxLjJ2MzE1LjczM2MwLjAxNSwxNC4xMzIsMTEuNDY4LDI1LjU4NSwyNS42LDI1LjZoMjgxLjZWNDM1LjINCgkJCWMwLjA0OSw0Mi4zOTUsMzQuNDA1LDc2Ljc1MSw3Ni44LDc2LjhoNTEuMmM0Mi4zOTUtMC4wNDksNzYuNzUxLTM0LjQwNSw3Ni44LTc2LjhWMjczLjA2Nw0KCQkJQzUxMS45NDMsMjQwLjU1OSw0OTEuNDQyLDIxMS42MDIsNDYwLjgsMjAwLjc0OHogTTQyNi42NjcsNDIuNjY3aDguNTMzYzQuNzEsMC4wMDYsOC41MjcsMy44MjMsOC41MzMsOC41MzN2MTQ1LjU3DQoJCQljLTIuODMzLTAuMzI2LTUuNjgyLTAuNDk0LTguNTMzLTAuNTAzaC04LjUzM1Y0Mi42Njd6IE04NS4zMzMsMTcuMDY3aDUxLjJ2MTEyLjIwOGwtMTguOTM4LTIzLjY3MQ0KCQkJYy0xLjYxOC0yLjAyNS00LjA3LTMuMjA0LTYuNjYyLTMuMjA0Yy0yLjU5MiwwLTUuMDQ0LDEuMTc5LTYuNjYyLDMuMjA0bC0xOC45MzgsMjMuNjcxVjE3LjA2N3ogTTUxLjIsMjUuNg0KCQkJYzAuMDA2LTQuNzEsMy44MjMtOC41MjcsOC41MzMtOC41MzNoOC41MzNWMTUzLjZjLTAuMDAyLDMuNjI1LDIuMjg3LDYuODU0LDUuNzA4LDguMDU0YzMuNDIsMS4yLDcuMjI1LDAuMTA3LDkuNDg4LTIuNzI1DQoJCQlsMjcuNDcxLTM0LjMzN2wyNy40NzEsMzQuMzM3YzEuNjE4LDIuMDI2LDQuMDcsMy4yMDUsNi42NjIsMy4yMDRjMi4yNjQsMC4wMDIsNC40MzUtMC44OTcsNi4wMzYtMi40OTcNCgkJCWMxLjYwMS0xLjYwMSwyLjQ5OS0zLjc3MiwyLjQ5Ny02LjAzNlYxNy4wNjdoNTEuMmM5LjQyMiwwLjAwOSwxNy4wNTcsNy42NDUsMTcuMDY3LDE3LjA2N3YyNzguMzQNCgkJCWMtNS4zNDQtMy40MDctMTEuNTQyLTUuMjM1LTE3Ljg3OS01LjI3NEg1MS4yVjI1LjZ6IE01MS4yLDMyNC4yNjdoMTUyLjc4OGM5LjM5MSwwLjMyOSwxNy4wMTksNy42OTMsMTcuNjc4LDE3LjA2N0g1MS4yVjMyNC4yNjd6DQoJCQkgTTMwNy4yLDM3NS40NjdIMjUuNmMtNC43MS0wLjAwNi04LjUyNy0zLjgyMy04LjUzMy04LjUzM1Y1MS4yYzAuMDA2LTQuNzEsMy44MjMtOC41MjcsOC41MzMtOC41MzNoOC41MzN2MzA3LjINCgkJCWMwLDQuNzEzLDMuODIsOC41MzMsOC41MzMsOC41MzNIMzA3LjJWMzc1LjQ2N3ogTTMwNy4yLDM0MS4zMzNoLTY4LjA2NmMwLjY3MS05LjM4NCw4LjMxNy0xNi43NDgsMTcuNzItMTcuMDY3SDMwNy4yVjM0MS4zMzN6DQoJCQkgTTMwNy4yLDMwNy4yaC01MC4zNDZjLTYuMzUyLDAuMDM4LTEyLjU2NSwxLjg3MS0xNy45MjEsNS4yODZWMzQuMTMzYzAuMDA5LTkuNDIyLDcuNjQ1LTE3LjA1NywxNy4wNjctMTcuMDY3aDE0NS4wNjcNCgkJCWM0LjcxLDAuMDA2LDguNTI3LDMuODIzLDguNTMzLDguNTMzdjE3MC42NjdIMzg0Yy00Mi4zOTUsMC4wNDktNzYuNzUxLDM0LjQwNS03Ni44LDc2LjhWMzA3LjJ6IE00MDEuMDY3LDIxMy4zMzN2MTEwLjkzM2gtNzYuOA0KCQkJdi01MS4yYzAuMDM3LTMyLjk3NCwyNi43NTktNTkuNjk2LDU5LjczMy01OS43MzNINDAxLjA2N3ogTTQ5NC45MzMsNDM1LjJjLTAuMDM3LDMyLjk3NC0yNi43NTksNTkuNjk2LTU5LjczMyw1OS43MzNIMzg0DQoJCQljLTMyLjk3NC0wLjAzNy01OS42OTYtMjYuNzU5LTU5LjczMy01OS43MzN2LTkzLjg2N2gxNzAuNjY3VjQzNS4yeiBNNDk0LjkzMywzMjQuMjY3aC03Ni44VjIxMy4zMzNINDM1LjINCgkJCWMzMi45NzQsMC4wMzcsNTkuNjk2LDI2Ljc1OSw1OS43MzMsNTkuNzMzVjMyNC4yNjd6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /></h4>
+						<ul>
+							<li><a href="https://www.udemy.com/course/spring-hibernate-tutorial/" target="_blank">&#9733;  Udemy - «Spring & Hibernate for Beginners»</a>(в процессе)</li>
+							<li><a href="https://hyperskill.org/" target="_blank">&#9733;  Hyperskill - «Java Developer»</a></li>
+							<li><a href="https://www.youtube.com/playlist?list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ" target="_blank">&#9733;  Н.Алишев - «Spring Framework видеокурс на youtube»</a></li>
+							<li><a href="https://exercism.io/" target="_blank">&#9733;  exercism.io - «Практика Java. Тренинг с задачами»</a></li>
+							<li><a href="https://www.w3schools.com/sql/default.asp" target="_blank">&#9733;  W3Schools - «SQL Tutorial»</a></li>
+							<li><a href="https://www.youtube.com/watch?v=OLFA0soYGhw&list=PLtPJ9lKvJ4oiNMvYbOzCmWy6cRzYAh9B1" target="_blank">&#9733;  Курс «Компьютерные сети - Автор: Андрей Созыкин»</a></li>
+							<li><a href="https://www.codewars.com/users/LenarXLA" target="_blank">&#9733;  Codewars - «Achieve code mastery through challenge»</a></li>
+							<li><a href="https://rs.school/js/" target="_blank">&#9733;  The Rolling Scopes - «Бесплатные курсы по программированию Front-end, JavaScript»</a></li>
+							<li><a href="https://webref.ru/" target="_blank">&#9733;  WebReference - «Руководства по веб-технологиям - Автор: Влад Мержевич»</a></li>
+							<li><a href="https://javascript30.com/" target="_blank">&#9733;  javascript30.com - «30-ти дневный челлендж по JS»</a></li>
+							<li><a href="https://www.htmldog.com/" target="_blank">&#9733;  htmldog.com - «Средний и продвинутый HTML»</a></li>
+							<li><a href="http://old.code.mu/books/css/" target="_blank">&#9733;  code.mu - «HTML, CSS» / «Javascript»</a></li>
+							<li><a href="https://www.freecodecamp.org/" target="_blank">&#9733;  freecodecamp.org - «Learn to code. HTML, CSS, Javascript and frameworks»</a></li>
+							<li><a href="http://htmlbook.ru/samhtml" target="_blank">&#9733;  htmlbook.ru - «Самоучитель HTML»</a></li>
+						</ul>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="arrow1">
+					<a href="#contact" class="scroll"><img src="images/arrow1.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- services-section-ends -->
+	</div>
+	<div class="footer-section" id="contact" id="contact">
+		<div class="container">
+			<div class="contact-header">
+				<h3>Контакты</h3>
+				<p style="font-size: medium;">Буду очень рад сотрудничеству, при взаимной заинтересованности</p>
+			</div>
+			<div class="social-icon">
+				<a href="skype:live:.cid.fed4fed405ce29b3" target="_blank"><i class="icon1"></i></a>
+				<a href="https://kazan.hh.ru/resume/c3283288ff0829bf5d0039ed1f4f494d716741" target="_blank"><i class="icon2"></i></a>
+				<a href="https://github.com/LenarXLA" target="_blank"><i class="icon3"></i></a>
+				<a href="https://www.freecodecamp.org/leoncraft" target="_blank"><i class="icon4"></i></a>
+				<a href="https://web.telegram.org/#/im?p=@lenarXLA" target="_blank"><i class="icon5"></i></a>
+				<a href="tel:+79227189559" target="_blank"><i class="icon6"></i></a>
+				<a href="https://www.freecodecamp.org/certification/leoncraft/javascript-algorithms-and-data-structures" target="_blank"><i class="icon7"></i></a>
+				<a href="https://www.youtube.com/user/leonruscraft" target="_blank"><i class="icon8"></i></a>
+			</div>
+			<div class="contact">
+				<h3 class="mail-title"><a  id="mail-to" href="mailto:lenarxla@gmail.com?subject=По вашему резюме">
+					Написать сообщение мне по электронной почте</a></h3>
+			</div>
+			<div class="footer-bottom">
+
+				<p>&copy; 2021 LenarXLA. All rights Reserved</p>
+
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+
+					$().UItoTop({
+						easingType: 'easeOutQuart'
+					});
+
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+
+	</div>
+	</div>
+
+
+</body>
+
+</html>
